@@ -14,6 +14,7 @@ const app = express();
 
 // SET UP MIDDLEWARE
 app.use(express.static("views"));
+app.use(express.static(path.join(__dirname, 'index.html')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended:  true}));
 
