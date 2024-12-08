@@ -1,3 +1,5 @@
+const backendUrl = 'https://health-tech-oyinkansolas-projects-ea717faf.vercel.app';
+
 // ADMIN, DOCTOR AND PATIENT REGISTRATION FORM SWITCHING
 const patientForm = document.getElementById('patientForm');
 const doctorForm = document.getElementById('doctorForm');
@@ -85,7 +87,7 @@ async function loginPatient() {
 
 
     if (isValid) {
-        const response = await fetch('/telemedicine/api/patients/login', {
+        const response = await fetch(`${backendUrl}/telemedicine/api/patients/login`, {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'
@@ -176,7 +178,7 @@ async function loginPatient() {
         };
 
         if (isValid) {
-            const response = await fetch('/telemedicine/api/doctors/login', {
+            const response = await fetch(`${backendUrl}/telemedicine/api/doctors/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json'
@@ -264,7 +266,7 @@ async function loginPatient() {
 
 
         if (isValid) {
-            const response = await fetch('/telemedicine/api/admin/login', {
+            const response = await fetch(`${backendUrl}/telemedicine/api/admin/login`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'

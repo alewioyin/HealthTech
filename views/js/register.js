@@ -158,7 +158,7 @@
     //check validation
     if (isValid) {
         // send the data to server
-        const response = await fetch('/telemedicine/api/patients/register', {
+        const response = await fetch(`${backendUrl}/telemedicine/api/patients/register`, {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'
@@ -325,7 +325,7 @@ async function adminRegistration() {
    
 
     if (isValid) {
-        const response = await fetch('/telemedicine/api/admin/register', {
+        const response = await fetch(`${backendUrl}/telemedicine/api/admin/register`, {
             method: "POST",
             headers:  {
                 'Content-Type': 'application/json'
