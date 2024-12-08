@@ -1,4 +1,4 @@
-const backendUrl = 'https://health-tech-oyinkansolas-projects-ea717faf.vercel.app';
+const backendUrl = 'https://health-tech-backend-oyinkansolas-projects-ea717faf.vercel.app/';
 
 // ADMIN, DOCTOR AND PATIENT REGISTRATION FORM SWITCHING
 const patientForm = document.getElementById('patientForm');
